@@ -2,7 +2,7 @@ public static void medirStack(int n) {
     StackArray<Integer> stack = new StackArray<>();
     
     // Medir PUSH
-    long inicio = System.nanoTime(); // Usamos nanosegundos por precisión 
+    long inicio = System.nanoTime(); // Usamos nanosegundos por precisión
     for (int i = 0; i < n; i++) {
         stack.push(i);
     }
