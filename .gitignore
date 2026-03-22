@@ -1,0 +1,45 @@
+# Compilados Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Directorios de build
+bin/
+out/
+build/
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VSCode (se incluye settings.json para la configuración del source path)
+.vscode/*
+!.vscode/settings.json
+
+# Variables de entorno (contienen credenciales / config local)
+.env
+
+# Logs generados en runtime
+logs/
+
+# Resultados del benchmark (generados, no versionables)
+results/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Archivos de sistema (Windows/Mac)
+Thumbs.db
+.DS_Store
