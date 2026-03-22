@@ -86,4 +86,30 @@ public class ListaSimple
                 nodo.siguiente = newNodo;
             }
         }
+
+    public void addBefore(double objetivo, double v)
+{
+    if (cabeza == null) return;
+
+    if (cabeza.valor == objetivo)
+    {
+        pushFront(v);
+        return;
+    }
+
+    Nodo actual = cabeza;
+
+    while (actual.siguiente != null && actual.siguiente.valor != objetivo)
+    {
+        actual = actual.siguiente;
+    }
+
+    if (actual.siguiente != null)
+    {
+        Nodo newNodo = new Nodo(v);
+        newNodo.siguiente = actual.siguiente;
+        actual.siguiente = newNodo;
+    }
 }
+}
+
